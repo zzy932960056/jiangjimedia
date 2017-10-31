@@ -60,7 +60,7 @@
 
 		<div class="page-logo">
 
-			<a class="brand" href="index.html">
+			<a class="brand" href="#">
 
 			<font size="14">匠几</font>
 
