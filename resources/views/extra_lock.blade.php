@@ -62,7 +62,7 @@
 
 			<a class="brand" href="index.html">
 
-			<font size="14">Me Young</font>
+			<font size="14">匠几</font>
 
 			</a>
 
@@ -104,7 +104,7 @@
 
 		<div class="page-footer">
 
-			2017 &copy; Me Young后台管理锁定界面
+			2017 &copy; 匠几后台管理锁定界面
 
 		</div>
 
