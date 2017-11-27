@@ -20,7 +20,8 @@
     
 	<script type="text/javascript" src="{{URL::asset('/yd_js/jquery-1.11.3.min.js')}}"></script>
 	<script type="text/javascript" src="{{URL::asset('/yd_js/wow.min.js')}}"></script>
-</head>  
+</head>
+    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>   
     <link rel="stylesheet" type="text/css" href="{{URL::asset('/yd_css/slick.css')}}">
     <script type="text/javascript" src="{{URL::asset('/yd_js/slick.min.js')}}"></script>
 

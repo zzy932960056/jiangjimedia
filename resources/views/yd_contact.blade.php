@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="{{URL::asset('/yd_js/jquery-1.11.3.min.js')}}"></script>
 	<script type="text/javascript" src="{{URL::asset('/yd_js/wow.min.js')}}"></script>
 </head>  
-
+	<script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script> 
 
 <div class="top-content lianxijiangji" style="position:relative; z-index:2">
 	<div class="slider-wrapper">

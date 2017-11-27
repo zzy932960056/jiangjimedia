@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('/dist/jquery.vm-carousel.css')}}">
 	<script type="text/javascript" src="{{URL::asset('/js2/jquery-1.11.3.min.js')}}"></script>
 	<script type="text/javascript" src="{{URL::asset('/js2/wow.min.js')}}"></script>
-    
+    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script> 
 <body class="home blog has-drawer">
 <div class="top-content concept" style="position:relative; z-index:2">
 	<div class="slider-wrapper">

@@ -27,7 +27,8 @@
     <link rel="stylesheet" href="{{URL::asset('/css2/Vidage.css')}}" />
     
 	<script type="text/javascript" src="{{URL::asset('/js2/jquery-1.11.3.min.js')}}"></script>
-	<script type="text/javascript" src="{{URL::asset('/js2/wow.min.js')}}"></script>   
+	<script type="text/javascript" src="{{URL::asset('/js2/wow.min.js')}}"></script>
+    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>    
 </head>
 <?php
 $agent = $_SERVER['HTTP_USER_AGENT'];
