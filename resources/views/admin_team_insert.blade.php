@@ -140,7 +140,7 @@
 
 									<i class="icon-reorder"></i>
 
-									<span class="hidden-480">匠几团队设置</span>
+									<span class="hidden-480">匠几团队</span>
 
 								</div>
 
