@@ -1,16 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
-body{ font-family:"微软雅黑" !important; font-size:16px; background:#b3b8ba;}
+body{ font-family:"Microsoft YaHei" !important; font-size:16px; background:#b3b8ba;}
 .hello span{color:#ffffff}
 
 @font-face {
- font-family: '微软雅黑';
- src: url('../yd_font/pingfangjian.eot');
- src: local('微软雅黑'),
-              local('微软雅黑'),
+ font-family: 'Microsoft YaHei';
+/* src: url('../yd_font/pingfangjian.eot');
+ src: local('Microsoft YaHei'),
+              local('Microsoft YaHei'),
               url('../yd_font/pingfangjian.woff') format('woff'),
               url('../yd_font/pingfangjian.ttf') format('truetype'),
-              url('../yd_font/pingfangjian.svg#微软雅黑') format('svg');
+              url('../yd_font/pingfangjian.svg#Microsoft YaHei') format('svg');*/
 } 
 
 /* bootstrap幻灯效果给淡入淡出 */
