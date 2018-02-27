@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body{ font-family:"苹方黑体-纤细-简" !important; font-size:18px; background:#b3b8ba}
+body{ font-family:"微软雅黑" !important; font-size:18px; background:#b3b8ba}
 
 .html_qcgdt{ overflow:hidden}
 
@@ -65,13 +65,13 @@ body{ font-family:"苹方黑体-纤细-简" !important; font-size:18px; backgrou
 .hello span{color:#ffffff}
 
 @font-face {
- font-family: '苹方黑体-纤细-简';
+ font-family: '微软雅黑';
  src: url('../font/pfjx.eot');
- src: local('苹方黑体-纤细-简'),
-              local('苹方黑体-纤细-简'),
+ src: local('微软雅黑'),
+              local('微软雅黑'),
               url('../font/pfjx.woff') format('woff'),
               url('../font/pfjx.ttf') format('truetype'),
-              url('../font/pfjx.svg#苹方黑体-纤细-简') format('svg');
+              url('../font/pfjx.svg#微软雅黑') format('svg');
 } 
 
 .text-right{height:70px; line-height:70px; float:right}
@@ -452,7 +452,7 @@ display: -moz-box;
 @media screen and (max-width: 1500px) {
 	
 	.lxjj_dian{position:absolute; right:16%; top:43%; width:36px; height:36px}
-	body{ font-family:"苹方黑体-纤细-简" !important; font-size:16px; background:#b3b8ba; font-weight:700 !important}
+	body{ font-family:"微软雅黑" !important; font-size:16px; background:#b3b8ba; font-weight:700 !important}
 	
 	.jjal_sanji_gongzai2{ display: none !important}
 	.jjal_sanji_gongzai3{ display: none !important}
