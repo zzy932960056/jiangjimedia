@@ -98,7 +98,7 @@ class IndexController extends Controller
     }
 
     //品牌案例
-    public function case(){
+    public function case1(){
     	$data = [];
     	//底部+弹窗
     	$info = DB::table('service_module')->orderBy('id','asc')->get();

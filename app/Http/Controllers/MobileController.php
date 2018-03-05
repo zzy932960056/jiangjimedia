@@ -107,7 +107,7 @@ class MobileController extends Controller
     }
 
     //品牌案例
-    public function case(){
+    public function case1(){
     	$data = [];
     	//banner图
         $jiangji_banner = DB::table('jiang_mobile_banner')
