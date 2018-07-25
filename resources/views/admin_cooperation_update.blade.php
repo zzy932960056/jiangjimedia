@@ -144,7 +144,7 @@
 
 									<ul class="nav nav-tabs">
 
-										<li class="active"><a href="#portlet_tab1" data-toggle="tab">匠几合作流程设置</a></li>
+										<li class="active"><a href="#portlet_tab1" data-toggle="tab">合作流程设置</a></li>
 
 									</ul>
 
