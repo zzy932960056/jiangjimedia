@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0016)http://so-ai.jp/ -->
 <html lang="ja" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>品牌案例</title>
     <link rel="shortcut icon" href="{{URL::asset('/images/jiangji.ico')}}">
@@ -13,12 +13,12 @@
     <link rel="stylesheet" type="text/css" href="{{URL::asset('/dist/jquery.vm-carousel.css')}}">
 	<script type="text/javascript" src="{{URL::asset('/js2/jquery-1.11.3.min.js')}}"></script>
 	<script type="text/javascript" src="{{URL::asset('/js2/wow.min.js')}}"></script>
-    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>    
+    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>
 <body class="home blog has-drawer">
 
     <link rel="stylesheet" type="text/css" href="{{URL::asset('/css2/slick.css')}}">
     <script type="text/javascript" src="{{URL::asset('/js2/slick.min.js')}}"></script>
-    
+
 <div class="top-content member" style="position:relative; z-index:2">
 	<div class="slider-wrapper">
 		<div class="slider-inner item-5 after-load" style="display: block;">
@@ -47,32 +47,32 @@
               <span style="transform: rotate(30deg); -webkit-transform: rotate(30deg);">O</span>
               </h4>
 		</div>
-        
+
         <div class="container-fluid jjtd_tanchu_hei2" id="index_youshang_tan">
             <div class="container">
 	        	<div class="index_youshang_tan">
                 	<img src="{{URL::asset('/images/tanchu_cha.png')}}" class="img-responsive index_youshang_tan_cha">
 					<img src="{{$company_info[0]->alert_info}}" class="img-responsive">
                     <a href="/contact" class="index_youshang_tan_a"></a>
-                </div>             
+                </div>
             </div>
         </div>
-        
-        
-        
+
+
+
 	</div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 
 
 
 </div>
 
-<div id="page" style="position:relative; z-index:1">	
+<div id="page" style="position:relative; z-index:1">
 
     @include('qt_navigate')
 
@@ -108,7 +108,7 @@
         	<img src="http://static.meyoungbaby.com/dengpao1.png" class="img-responsive" id="youshang_deng">
         </div>
     <div class="container" style="padding-top:115px; padding-bottom: 60px; position:relative">
-		
+
         <!--匠几案例主体-->
         <div class="row jjal_zhuti">
         	<div class="col-md-12 col-xs-12 col-sm-12 jjdt_biaoti" style="margin-bottom:0">
@@ -124,14 +124,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-12 col-sm-12 col-xs-12">
-            	<p class="jjal_albt1">{{$va->case_title}}</p>
+            	<p class="jjal_albt1"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                 <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                 <p class="jjal_alnr">坐标：{{$va->coord}}</p>
             </div>
             @endforeach
-			
+
 			<script>
             $(document).ready(function(){
               $('.slick').slick({
@@ -145,50 +145,50 @@
               });
             });
             </script>
-            
-            
+
+
             <div class="col-md-12 col-sm-12 col-xs-12 jjal_al_pbl" style="padding:0; margin-bottom:4vh">
             	<p class="jjal_al_pbl_bt">更多案例<br><img src="{{URL::asset('/images/index_bt_bolangxian.png')}}" class="img-responsive"></p>
                 @foreach($case as $ke => $va)
                 @if(is_int($ke/2))
                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding-right:30px">
                     <a href="/case/details/{{$va->id}}"><img src="{{$va->case_pic1}}" class="img-responsive"></a>
-                    <p class="jjal_albt">{{$va->case_title}}</p>
+                    <p class="jjal_albt"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                     <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                     <p class="jjal_alnr">坐标：{{$va->coord}}</p>
                 </div>
                 @else
                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:30px">
                     <a href="/case/details/{{$va->id}}"><img src="{{$va->case_pic1}}" class="img-responsive"></a>
-                    <p class="jjal_albt">{{$va->case_title}}</p>
+                    <p class="jjal_albt"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                     <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                     <p class="jjal_alnr">坐标：{{$va->coord}}</p>
                 </div>
                 @endif
                 @endforeach
             </div>
-            
 
 
 
 
-            
+
+
         </div>
-        
-        
+
+
     </div>
 </div>
 
     	<!--底部-->
 <a href="javascript:;" id="toTop" title="回到顶部"><div class="index_dibu_top_guding" id="index_totop"><img src="{{URL::asset('/images/jiangji_sun.gif')}}" class="img-responsive"></div></a>
-       
+
 <div class="container-fluid" style="padding-bottom:55px;">
 	<div style="position:relative">
         <img src="{{URL::asset('/images/index_dibutuan.png')}}" class="img-responsive" style="width:100%">
         <a href="javascript:;" id="toTop2" title="回到顶部"><div class="index_dibu_top" id="index_totop2"><img src="{{URL::asset('/images/top-2.gif')}}" class="img-responsive"></div></a>
     </div>
     <div style="width:100%; background:#b3b8ba; position:relative; z-index:1000; padding:5vh 0">
-    
+
         <div class="container">
                 <div class="row index_dibu">
                     <div class="col-md-5 col-sm-5 col-xs-5">
@@ -204,7 +204,7 @@
                     <div class="col-md-2 col-sm-2 col-xs-2 index_dibu_beian"><img src="{{$company_info[0]->qr_code}}" class="img-responsive"></div>
                 </div>
          </div>
-         
+
     </div>
 </div>
 
