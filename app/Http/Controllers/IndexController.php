@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Jiangjinews;
 
 class IndexController extends Controller
-{   
+{
 	//匠几主页
     public function index(){
     	$data = [];
@@ -18,22 +18,22 @@ class IndexController extends Controller
     		->where('video_screen','首屏')
     		->pluck('video_path');
     	$screen_video = $screen_video[0];
-        $data['screen_video'] = $screen_video;
-        //匠几服务
-        $service = DB::table('service_introduce')->orderBy('id','asc')->get();
-        $data['service'] = $service;
-        //匠几服务图
-        $info = DB::table('service_module')->orderBy('id','asc')->get();
-        $data['info'] = $info;
-        //底部+弹窗
-        $company_info = DB::table('company_info')->where('id',1)->get();
-        $data['company_info'] = $company_info;
-        //品牌案例
-        $jiangji_case = DB::table('jiangji_case')
-	        ->select(['id','case_title','cover_pic','case_index'])
-	        ->where('is_cover',1)
-	        ->limit(5)
-	        ->get();
+      $data['screen_video'] = $screen_video;
+      //匠几服务
+      $service = DB::table('service_introduce')->orderBy('id','asc')->get();
+      $data['service'] = $service;
+      //匠几服务图
+      $info = DB::table('service_module')->orderBy('id','asc')->get();
+      $data['info'] = $info;
+      //底部+弹窗
+      $company_info = DB::table('company_info')->where('id',1)->get();
+      $data['company_info'] = $company_info;
+      //品牌案例
+      $jiangji_case = DB::table('jiangji_case')
+        ->select(['id','case_title','cover_pic','case_index'])
+        ->where('is_cover',1)
+        ->limit(5)
+        ->get();
 	    $data['jiangji_case'] = $jiangji_case;
 	    //匠几团队
 	    $jiangji_team = DB::table('jiangji_team')->orderBy('id','asc')->get();
@@ -81,7 +81,7 @@ class IndexController extends Controller
     	$info = DB::table('service_module')->orderBy('id','asc')->get();
         $data['info'] = $info;
         $company_info = DB::table('company_info')->where('id',1)->get();
-        $data['company_info'] = $company_info;    	
+        $data['company_info'] = $company_info;
         //banner
     	$banner = DB::table('jiang_banner')->where('banner_sort','匠几服务')->get();
     	$data['banner'] = $banner;
@@ -98,30 +98,30 @@ class IndexController extends Controller
     }
 
     //品牌案例
-    public function case(){
+    public function case1(){
     	$data = [];
     	//底部+弹窗
     	$info = DB::table('service_module')->orderBy('id','asc')->get();
-        $data['info'] = $info;
-        $company_info = DB::table('company_info')->where('id',1)->get();
-        $data['company_info'] = $company_info;
-        //banner
+      $data['info'] = $info;
+      $company_info = DB::table('company_info')->where('id',1)->get();
+      $data['company_info'] = $company_info;
+      //banner
     	$banner = DB::table('jiang_banner')->where('banner_sort','品牌案例')->get();
     	$data['banner'] = $banner;
     	//品牌案例
-        $hot_case = DB::table('jiangji_case')
-            ->select(['id','case_title','service_content','coord','case_pic1','case_pic2','case_pic3'])
-            ->where('is_hot',1)
-            ->limit(3)
-            ->orderBy('id','asc')
-            ->get();
-        $data['hot_case'] = $hot_case;
-        $case = DB::table('jiangji_case')
-            ->select(['id','case_title','service_content','coord','case_pic1'])
-            ->where('is_hot',0)
-            ->orderBy('id','asc')
-            ->get();
-        $data['case'] = $case;
+      $hot_case = DB::table('jiangji_case')
+          ->select(['id','case_title','service_content','coord','case_pic1','case_pic2','case_pic3'])
+          ->where('is_hot',1)
+          ->limit(3)
+          ->orderBy('id','asc')
+          ->get();
+      $data['hot_case'] = $hot_case;
+      $case = DB::table('jiangji_case')
+          ->select(['id','case_title','service_content','coord','case_pic1'])
+          ->where('is_hot',0)
+          ->orderBy('id','asc')
+          ->get();
+      $data['case'] = $case;
     	return view('qt_case',$data);
     }
 
@@ -147,10 +147,10 @@ class IndexController extends Controller
     	$data = [];
     	//底部+弹窗
     	$info = DB::table('service_module')->orderBy('id','asc')->get();
-        $data['info'] = $info;
-        $company_info = DB::table('company_info')->where('id',1)->get();
-        $data['company_info'] = $company_info;
-        //banner
+      $data['info'] = $info;
+      $company_info = DB::table('company_info')->where('id',1)->get();
+      $data['company_info'] = $company_info;
+      //banner
     	$banner = DB::table('jiang_banner')->where('banner_sort','配套采购')->get();
     	$data['banner'] = $banner;
     	//配套采购
@@ -232,10 +232,10 @@ class IndexController extends Controller
     	$data = [];
     	//底部+弹窗
     	$info = DB::table('service_module')->orderBy('id','asc')->get();
-        $data['info'] = $info;
-        $company_info = DB::table('company_info')->where('id',1)->get();
-        $data['company_info'] = $company_info;
-        //banner
+      $data['info'] = $info;
+      $company_info = DB::table('company_info')->where('id',1)->get();
+      $data['company_info'] = $company_info;
+      //banner
     	$banner = DB::table('jiang_banner')->where('banner_sort','联系匠几')->get();
     	$data['banner'] = $banner;
     	//联系匠几
@@ -243,8 +243,8 @@ class IndexController extends Controller
     	$data['contact'] = $contact;
     	return view('qt_lianxijiangji',$data);
     }
-    
- 
+
+
 
 
 }

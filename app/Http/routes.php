@@ -25,7 +25,7 @@ Route::group(['domain' => 'm.jiangjimedia.com'], function(){
 	//联系匠几
 	Route::get('/contact','MobileController@contact');
 	//品牌案例
-	Route::get('/case','MobileController@case');
+	Route::get('/case','MobileController@case1');
 	//品牌案例三级
 	Route::get('/case/details/{id}','MobileController@case_details')->where('id','[0-9]+');
 	//匠几动态
@@ -46,7 +46,7 @@ Route::group(['domain' => 'm.jiangjimedia.com'], function(){
 	// //联系匠几
 	// Route::get('/contact','MobileController@contact');
 	// //品牌案例
-	// Route::get('/case','MobileController@case');
+	// Route::get('/case','MobileController@case1');
 	// //品牌案例三级
 	// Route::get('/case/details/{id}','MobileController@case_details')->where('id','[0-9]+');
 	// //匠几动态
@@ -67,7 +67,7 @@ Route::get('/purchase','IndexController@purchase');
 //匠几服务
 Route::get('/service','IndexController@service');
 //品牌案例
-Route::get('/case','IndexController@case');
+Route::get('/case','IndexController@case1');
 //品牌案例三级
 Route::get('/case/details/{id}','IndexController@case_details')->where('id','[0-9]+');
 //匠几动态

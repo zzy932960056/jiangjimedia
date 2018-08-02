@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Jiangjinews;
 
 class MobileController extends Controller
-{   
+{
 	//匠几主页
     public function index(){
     	$data = [];
@@ -107,7 +107,7 @@ class MobileController extends Controller
     }
 
     //品牌案例
-    public function case(){
+    public function case1(){
     	$data = [];
     	//banner图
         $jiangji_banner = DB::table('jiang_mobile_banner')
