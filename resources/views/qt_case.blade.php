@@ -160,7 +160,7 @@
                 @else
                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:30px">
                     <a href="/case/details/{{$va->id}}"><img src="{{$va->case_pic1}}" class="img-responsive"></a>
-                    <p class="jjal_albt">{{$va->case_title}}</p>
+                    <p class="jjal_albt"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                     <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                     <p class="jjal_alnr">坐标：{{$va->coord}}</p>
                 </div>
