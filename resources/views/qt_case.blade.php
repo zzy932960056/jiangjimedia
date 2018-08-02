@@ -126,7 +126,7 @@
             </div>
             
             <div class="col-md-12 col-sm-12 col-xs-12">
-            	<p class="jjal_albt1">{{$va->case_title}}</p>
+            	<p class="jjal_albt1"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                 <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                 <p class="jjal_alnr">坐标：{{$va->coord}}</p>
             </div>
