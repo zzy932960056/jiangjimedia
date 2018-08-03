@@ -110,6 +110,14 @@
     <div class="container" style="padding-top:115px; padding-bottom: 60px; position:relative">
 
         <!--匠几案例主体-->
+         <style>
+                .insert_a a{
+                        color: #fff;
+                }
+                .insert_a a:hover{
+                        color: #fff;
+                }
+        </style>
         <div class="row jjal_zhuti">
         	<div class="col-md-12 col-xs-12 col-sm-12 jjdt_biaoti" style="margin-bottom:0">
             	<img src="{{URL::asset('/images/anli_biaoti.png')}}" class="img-responsive">
@@ -126,7 +134,7 @@
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-            	<p class="jjal_albt1"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
+            	<p class="jjal_albt1 insert_a"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                 <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                 <p class="jjal_alnr">坐标：{{$va->coord}}</p>
             </div>
@@ -153,14 +161,14 @@
                 @if(is_int($ke/2))
                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding-right:30px">
                     <a href="/case/details/{{$va->id}}"><img src="{{$va->case_pic1}}" class="img-responsive"></a>
-                    <p class="jjal_albt"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
+                    <p class="jjal_albt insert_a"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                     <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                     <p class="jjal_alnr">坐标：{{$va->coord}}</p>
                 </div>
                 @else
                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:30px">
                     <a href="/case/details/{{$va->id}}"><img src="{{$va->case_pic1}}" class="img-responsive"></a>
-                    <p class="jjal_albt"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
+                    <p class="jjal_albt insert_a"><a href="/case/details/{{$va->id}}">{{$va->case_title}}</a></p>
                     <p class="jjal_alnr">服务内容：{{$va->service_content}}</p>
                     <p class="jjal_alnr">坐标：{{$va->coord}}</p>
                 </div>
