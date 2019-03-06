@@ -174,8 +174,8 @@ $(function(){
 </div>
 
 <!--匠几团队-->
-<div class="container-fluid" style="margin-top:15vh">
-	<!-- <div class="row index_zhuti_title"><img src="{{URL::asset('/yd_images/jiangjituandui_title.png')}}" class="img-responsive"></div>
+<!-- <div class="container-fluid" style="margin-top:15vh">
+	<div class="row index_zhuti_title"><img src="{{URL::asset('/yd_images/jiangjituandui_title.png')}}" class="img-responsive"></div>
 
     <div class="row index_zhuti_jjtd_1">
 
@@ -206,9 +206,9 @@ $(function(){
               <img src="{{URL::asset('/yd_images/index_jjtd_you.png')}}" class="img-responsive">
         </a>
 
-    </div> -->
+    </div>
 
-</div>
+</div> -->
 
 <!--匠几动态-->
 <div class="container-fluid" style="margin-top:25vh">
