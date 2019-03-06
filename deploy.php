@@ -89,7 +89,7 @@ add('writable_dirs', []);
 set('keep_releases', 3);
 // Servers
 
-server('production', 'www.hyzemedia.com')
+server('production', 'www.jiangjimedia.com')
     ->user('oipublish')
     ->password('hyze@publish')
 //    ->identityFile()
@@ -97,4 +97,3 @@ server('production', 'www.hyzemedia.com')
 
 
 // Tasks
-
