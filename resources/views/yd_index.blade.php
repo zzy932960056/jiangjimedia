@@ -17,11 +17,11 @@
 	<link href="{{URL::asset('/yd_css/so-ai.css')}}" rel="stylesheet" media="screen">
 	<link href="{{URL::asset('/yd_css/index.css')}}" rel="stylesheet" media="screen">
 	<link href="{{URL::asset('/yd_css/animate.css')}}" rel="stylesheet" media="screen">
-    
+
 	<script type="text/javascript" src="{{URL::asset('/yd_js/jquery-1.11.3.min.js')}}"></script>
 	<script type="text/javascript" src="{{URL::asset('/yd_js/wow.min.js')}}"></script>
-</head>  
-  <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script> 
+</head>
+  <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>
 
 <div class="top-content index2" style="position:relative; z-index:2">
 	<div class="slider-wrapper">
@@ -53,7 +53,7 @@
 		</div>
 	</div>
 </div>
-    
+
   @include('yd_navigation')
 
 <!--匠几服务-->
@@ -64,7 +64,7 @@
         {!! $service_introduce->service_introduce !!}
     </div>
     <div class="row index_zhuti_jjfw_2">
-    
+
             <div id="picc" class="carousel slide pad_010 b_k">
                  <!-- 轮播（Carousel）指标 -->
                         <ol class="carousel-indicators" id="jjfw_ol">
@@ -99,7 +99,7 @@
             </div>
 
     </div>
-    
+
 </div>
 <script>
 $(function(){
@@ -159,7 +159,7 @@ $(function(){
                 @endforeach
             	</div>
         </div>
-                        
+
         <a href="#picz" class="left carousel-control left1" data-slide="prev">
               <img src="{{URL::asset('/yd_images/index_jjal_zuo.png')}}" class="img-responsive">
         </a>
@@ -168,17 +168,17 @@ $(function(){
         </a>
 
     </div>
-    
+
     <div class="index_zhuti_jjal_4"><a href="/case">查看更多案例<img src="{{URL::asset('/yd_images/index_jjal_btn_jiantou.png')}}"></a></div>
-    
+
 </div>
 
 <!--匠几团队-->
 <div class="container-fluid" style="margin-top:15vh">
-	<div class="row index_zhuti_title"><img src="{{URL::asset('/yd_images/jiangjituandui_title.png')}}" class="img-responsive"></div>
+	<!-- <div class="row index_zhuti_title"><img src="{{URL::asset('/yd_images/jiangjituandui_title.png')}}" class="img-responsive"></div>
 
     <div class="row index_zhuti_jjtd_1">
-    
+
         <div class="carousel slide" id="pic_tuandui" data-interval="3200" >
             <div class="carousel-inner">
                 @foreach($jiangji_team as $ke => $va)
@@ -198,7 +198,7 @@ $(function(){
                 @endforeach
              </div>
         </div>
-                        
+
         <a href="#pic_tuandui" class="left carousel-control left2" data-slide="prev">
               <img src="{{URL::asset('/yd_images/index_jjtd_zuo.png')}}" class="img-responsive">
         </a>
@@ -206,8 +206,8 @@ $(function(){
               <img src="{{URL::asset('/yd_images/index_jjtd_you.png')}}" class="img-responsive">
         </a>
 
-    </div>
-    
+    </div> -->
+
 </div>
 
 <!--匠几动态-->
@@ -220,16 +220,16 @@ $(function(){
         <div class="index_zhuti_jjal_2" style="margin-top:0 !important"><a href="/news/details/{{$va->id}}">查看更多<img src="{{URL::asset('/yd_images/index_jjal_btn_jiantou.png')}}"></a></div>
 	  </div>
     @endforeach
-    
-    
+
+
     <div class="row index_zhuti_jjdt_3">
         @foreach($jiangji_news as $ke => $va)
         <div class="col-md-3 col-sm-3 col-xs-3" id="index_jjdt_chufa{{$ke+1}}"><img src="{{$va->hot_pic}}" class="img-responsive"><div><span class="index_zhuti_jjdt_3_span"></span></div></div>
         @endforeach
     </div>
-    
+
     <div class="index_zhuti_jjal_4" style="margin-top:8vh"><a href="/news">查看更多案例<img src="{{URL::asset('/yd_images/index_jjal_btn_jiantou.png')}}"></a></div>
-    
+
 </div>
 
 <!--合作流程-->
@@ -266,4 +266,3 @@ $(function(){
   background-image: url("{{$jiangji_banner}}");
 }
 </style>
-

@@ -23,12 +23,12 @@
 	<link href="{{URL::asset('/css2/index.css')}}" rel="stylesheet" media="screen">
 	<link href="{{URL::asset('/css2/animate.css')}}" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="{{URL::asset('/dist/jquery.vm-carousel.css')}}">
-    
+
     <link rel="stylesheet" href="{{URL::asset('/css2/Vidage.css')}}" />
-    
+
 	<script type="text/javascript" src="{{URL::asset('/js2/jquery-1.11.3.min.js')}}"></script>
 	<script type="text/javascript" src="{{URL::asset('/js2/wow.min.js')}}"></script>
-    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>    
+    <script type="text/javascript" src="//s.union.360.cn/205812.js" async defer></script>
 </head>
 <?php
 $agent = $_SERVER['HTTP_USER_AGENT'];
@@ -37,14 +37,14 @@ header("Location:http://m.jiangjimedia.com");
 ?>
 <body class="home blog has-drawer">
 <div class="top-content index" style="position:relative; z-index:999">
-                
+
 	<div class="slider-wrapper" style="overflow:hidden !important">
 		<div class="slider-inner item-5 after-load" style="display: block;">
 
                 <video id="VidageVideo" class="Vidage__video" preload="metadata" loop autoplay muted>
                     <source src="{{$screen_video}}" type="video/mp4">
                 </video>
-                
+
 		</div>
 	</div>
 	<div class="border">
@@ -70,20 +70,20 @@ header("Location:http://m.jiangjimedia.com");
               <span style="transform: rotate(30deg); -webkit-transform: rotate(30deg);">O</span>
               </h4>
 		</div>
-        
+
         <div class="container-fluid jjtd_tanchu_hei2" id="index_youshang_tan">
             <div class="container">
 	        	<div class="index_youshang_tan">
                 	<img src="{{URL::asset('/images/tanchu_cha.png')}}" class="img-responsive index_youshang_tan_cha">
 					<img src="{{$company_info[0]->alert_info}}" class="img-responsive">
                     <a href="/contact" class="index_youshang_tan_a"></a>
-                </div>             
+                </div>
             </div>
         </div>
-        
+
 	</div>
-    
-    
+
+
 
 	<div class="hidden-xs" style="position: fixed; top: 50%; left: 0; width: 100%; height: 146px; z-index: 999;">
 		<div style="text-align: center; margin-top: -120px;">
@@ -174,7 +174,7 @@ header("Location:http://m.jiangjimedia.com");
                 @endif
                 @endforeach
             </div>
-        
+
     	<!--品牌案例-->
             <div class="row index_ppal">
                 <p class="index_jjfw_1" style="margin-bottom:7vh">品牌案例<br><img src="{{URL::asset('/images/index_bt_bolangxian.png')}}" class="img-responsive"><br><span>Brand case</span></p>
@@ -207,24 +207,24 @@ header("Location:http://m.jiangjimedia.com");
                     	@endif
                         @endforeach
                     </ul>
-                </div>        
-		                
-                
+                </div>
+
+
                 <div class="col-md-12 col-sm-12 col-xs-12 index_ppal_more"><a href="/case">查看更多案例<span class="index_ppal_more_you"><img src="{{URL::asset('/images/anli_you.png')}}" class="img-circle"></span></a></div>
 
             </div>
 		</div>
     </div>
-    
-    
-    
+
+
+
 <div class="container-fluid" style="position:relative; padding-bottom:20vh">
     	<!--匠几团队-->
-            <div class="row index_jjtd">
-                <p class="index_jjfw_1" style="margin-bottom:10vh">匠几团队<br><img src="{{URL::asset('/images/index_bt_bolangxian.png')}}" class="img-responsive"><br><span>Team</span></p>
+            <!-- <div class="row index_jjtd">
+                <p class="index_jjfw_1" style="margin-bottom:10vh">匠几团队<br><img src="{{URL::asset('/images/index_bt_bolangxian.png')}}" class="img-responsive"><br><span>Team</span></p> -->
 
                 <!--团队信息弹出层-->
-                @foreach($jiangji_team as $ke => $value)          
+                <!-- @foreach($jiangji_team as $ke => $value)
                 <div class="container-fluid jjtd_tanchu_hei" id="index_tuandui_tan{{$ke+1}}">
                     <div class="container">
                         <div class="index_tuandui_tan">
@@ -237,13 +237,13 @@ header("Location:http://m.jiangjimedia.com");
                                     {{$v}}<br>
                                 @endforeach
                             </p>
-                        </div>             
+                        </div>
                     </div>
                 </div>
-                @endforeach
+                @endforeach -->
 
 
-               <ul class="vmcarousel-centered-infitine vmc-centered" id="jjtd_hgtz" style="position:relative; z-index:1000;">
+               <!-- <ul class="vmcarousel-centered-infitine vmc-centered" id="jjtd_hgtz" style="position:relative; z-index:1000;">
                     @foreach($jiangji_team as $ke => $value)
                     <li id="index_tuandui_tan_chufa{{$ke+1}}">
                         <img src="{{$value->staff_pic1}}" alt="{{$value->staff_name}}" class="img-responsive index_tuandui_img1">
@@ -256,10 +256,10 @@ header("Location:http://m.jiangjimedia.com");
                             })
                     </script>
                     @endforeach
-               </ul>
-				
-                  
-			</div>
+               </ul> -->
+
+
+			<!-- </div> -->
 
 </div>
 
@@ -270,7 +270,7 @@ header("Location:http://m.jiangjimedia.com");
     	<!--匠几动态-->
             <div class="row index_jjdt" style="padding-top:4vh;">
                 <p class="index_jjfw_1" style="margin-bottom:7vh">匠几动态<br><img src="{{URL::asset('/images/index_bt_bolangxian.png')}}" class="img-responsive"><br><span>News</span></p>
-                
+
                 @foreach($jiangji_news as $key => $value)
                 <div class="col-md-12 col-sm-12 col-xs-12" style="padding:0; position:relative; margin-bottom:2vh" id="index_jjdt_da{{$key+1}}">
                     <div class="col-md-7 col-sm-7 col-xs-7 wow animated">
@@ -306,9 +306,9 @@ header("Location:http://m.jiangjimedia.com");
                         @endif
                         @endforeach
                     </ul>
-                </div>        
-		                
-                
+                </div>
+
+
                 <div class="col-md-12 col-sm-12 col-xs-12 index_ppal_more"><a href="/news">查看更多动态<span class="index_ppal_more_you"><img src="{{URL::asset('/images/anli_you.png')}}" class="img-circle"></span></a></div>
 
 
@@ -334,14 +334,14 @@ header("Location:http://m.jiangjimedia.com");
 
     	<!--底部-->
 <a href="javascript:;" id="toTop" title="回到顶部"><div class="index_dibu_top_guding" id="index_totop"><img src="{{URL::asset('/images/jiangji_sun.gif')}}" class="img-responsive"></div></a>
-       
+
 <div class="container-fluid" style="padding-bottom:55px;">
 	<div style="position:relative">
         <img src="{{URL::asset('/images/index_dibutuan.png')}}" class="img-responsive" style="width:100%">
         <a href="javascript:;" id="toTop2" title="回到顶部"><div class="index_dibu_top" id="index_totop2"><img src="{{URL::asset('/images/top-2.gif')}}" class="img-responsive"></div></a>
     </div>
     <div style="width:100%; background:#b3b8ba; position:relative; z-index:1000; padding:5vh 0">
-    
+
         <div class="container">
                 <div class="row index_dibu">
                     <div class="col-md-5 col-sm-5 col-xs-5">
@@ -357,7 +357,7 @@ header("Location:http://m.jiangjimedia.com");
     				<div class="col-md-2 col-sm-2 col-xs-2 index_dibu_beian"><img src="{{$company_info[0]->qr_code}}" class="img-responsive"></div>
                 </div>
          </div>
-         
+
     </div>
 </div>
 
@@ -372,7 +372,7 @@ header("Location:http://m.jiangjimedia.com");
 <script src="{{URL::asset('/dist/jquery.vm-carousel.js')}}"></script>
 <script type="text/javascript">
     $(function(){
-        
+
                 $('.vmcarousel-centered-infitine').vmcarousel({
                          centered: false,
                          start_item: 0,
@@ -380,17 +380,17 @@ header("Location:http://m.jiangjimedia.com");
                          infinite: false,
                       });
 
-        
+
           });
 </script>
 
 <!-- Vidage init -->
 	<script src="{{URL::asset('/js2/Vidage.min.js')}}"></script>
 	<script>
-		new Vidage('#VidageVideo'); 
-		
-		
+		new Vidage('#VidageVideo');
+
+
 	</script>
 <script>
- $('#picz').carousel({ interval: false }) 
+ $('#picz').carousel({ interval: false })
  </script>
