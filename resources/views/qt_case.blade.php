@@ -110,14 +110,15 @@
     <div class="container" style="padding-top:115px; padding-bottom: 60px; position:relative">
 
         <!--匠几案例主体-->
-				<style>
-							 .insert_a a{
-											 color: #fff;
-							 }
-							 .insert_a a:hover{
-											 color: #fff;
-							 }
-			 </style>
+
+        <style>
+                .insert_a a{
+                        color: #fff;
+                }
+                .insert_a a:hover{
+                        color: #fff;
+                }
+        </style>
         <div class="row jjal_zhuti">
         	<div class="col-md-12 col-xs-12 col-sm-12 jjdt_biaoti" style="margin-bottom:0">
             	<img src="{{URL::asset('/images/anli_biaoti.png')}}" class="img-responsive">
