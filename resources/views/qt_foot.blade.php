@@ -15,5 +15,5 @@
         a:hover{color:white;text-decoration:none}
         a:active{color:white;}
     </style>
-	<a href="http://www.beian.miit.gov.cn" target="_blank">Copyright©2016-2019 北京>华艺卓尔文化传媒有限公司版权所有 京ICP备16020816号-2</a></div>
+	<a href="http://www.beian.miit.gov.cn" target="_blank">Copyright©2016-2019 京ICP备16020816号-2</a></div>
 </div>
