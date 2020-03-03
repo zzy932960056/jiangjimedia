@@ -8,5 +8,12 @@
         <a href="/news"><li>匠几动态</li></a>
         <a href="/contact"><li>联系匠几</li></a>
     </ul>
-    <div class="col-xs-12" style="font-size:14px; padding-left:20px; margin-top:20px"><a href="http://www.beian.miit.gov.cn" target="_blank">Copyright©2016-2019 北京华艺卓尔文化传媒有限公司版权所有 京ICP备16020816号-2</a></div>
+	<style>
+        a{text-decoration:none}
+        a:{color:white;}
+        a:visited{color:white;}
+        a:hover{color:white;text-decoration:none}
+        a:active{color:white;}
+    </style>
+	<a href="http://www.beian.miit.gov.cn" target="_blank">Copyright©2016-2019 北京>华艺卓尔文化传媒有限公司版权所有 京ICP备16020816号-2</a></div>
 </div>
