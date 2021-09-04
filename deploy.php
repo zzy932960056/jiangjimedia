@@ -82,7 +82,7 @@ after('deploy', 'success');
 
 // Configuration
 set('writable_use_sudo', false);
-set('repository', 'git@git.coding.net:zzy932960056/jiangjimedia.git');
+set('repository', 'git@github.com:zzy932960056/jiangjimedia.git');
 add('shared_files', []);
 add('shared_dirs', []);
 add('writable_dirs', []);
